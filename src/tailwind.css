@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.for-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.for-h {
+    font-family: 'DM Serif Display', serif;
+}
+
+.for-p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.for-product {
+    font-family: 'Bodoni Moda', serif;
+}
