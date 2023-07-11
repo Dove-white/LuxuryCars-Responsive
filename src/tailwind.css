@@ -3,18 +3,40 @@
 @tailwind utilities;
 
 .for-col {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .for-h {
-    font-family: 'DM Serif Display', serif;
+  font-family: "DM Serif Display", serif;
 }
 
 .for-p {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .for-product {
-    font-family: 'Bodoni Moda', serif;
+  font-family: "Bodoni Moda", serif;
+}
+
+.t-transform::after {
+  transition: transform 0.5s;
+}
+
+.t-transform {
+  transition: transform 0.5s;
+}
+
+.s-transform:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+
+.btn:active {
+  transform: translateY(4px);
+}
+
+.btn-sub:active {
+    transform: translateX(-4px);
 }

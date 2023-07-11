@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="sm:scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,19 +17,19 @@
     <header id="header" class="mb-10">
       <section
         id="nav-bar"
-        class="sticky top-0 z-10 flex items-center justify-between bg-[#ffffffc6] px-4 py-6 md:relative md:px-8 xl:p-16"
+        class="sticky top-0 z-10 flex items-center justify-between bg-[#ffffffc6] px-4 py-6 md:relative md:px-8 xl:p-10"
       >
-        <h2 class="md:text-[24px]">LuxuryCars</h2>
+        <h2 class="md:text-[24px] cursor-pointer">LuxuryCars</h2>
         <nav id="nav-list" class="flex gap-10">
-          <a href="#" class="hidden md:text-[24px] xl:block">Home</a>
-          <a href="#" class="hidden md:text-[24px] xl:block">Services</a>
-          <a href="#" class="hidden md:text-[24px] xl:block">Blog</a>
-          <a href="#" class="hidden md:text-[24px] xl:block">Contact Us</a>
+          <a href="#nav-bar" class="hidden md:text-[24px] xl:block after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[2px] after:rounded-[3px] after:bg-[#F1BC00] after:scale-x-100 t-transform s-transform relative">Home</a>
+          <a href="#our-services" class="hidden md:text-[24px] xl:block after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[2px] after:rounded-[3px] after:bg-[#F1BC00] after:scale-x-0 hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative">Services</a>
+          <a href="#blog" class="hidden md:text-[24px] xl:block after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[2px] after:rounded-[3px] after:bg-[#F1BC00] after:scale-x-0 hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative">Blog</a>
+          <a href="#book-form" class="hidden md:text-[24px] xl:block after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[2px] after:rounded-[3px] after:bg-[#F1BC00] after:scale-x-0 hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative">Contact Us</a>
           <div
             class="top-[25px] flex items-center gap-1 md:absolute md:right-[94.2px] xl:static"
           >
             <img src="img/sing-in.png" alt="" class="w-[30%]" />
-            <a href="#" class="text-[10px] font-[400] md:text-[24px]"
+            <a href="#resgister-form" class="text-[10px] font-[400] md:text-[24px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[2px] after:rounded-[3px] after:bg-[#F1BC00] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative"
               >Sing In</a
             >
           </div>
@@ -40,7 +40,7 @@
           <div class="h-[2px] w-4 bg-black md:h-[4px] md:w-7"></div>
         </button>
       </section>
-      <section id="ash" class="hidden h-[40px] bg-[#C4C4C4] xl:block"></section>
+      <section id="ash" class="hidden h-[20px] bg-[#C4C4C4] xl:block"></section>
       <section id="main-img" class="sm:relative">
         <img src="img/banner-lambo-1.png" alt="" />
         <figure
@@ -59,7 +59,7 @@
             our luxury cars
           </p>
           <button
-            class="rounded-full bg-[#21408E] px-2 py-[2px] text-[10px] text-white hover:bg-[#21408eec] sm:text-[8px] md:text-[13px] xl:rounded-[24px] xl:px-4 xl:text-[22px]"
+            class="rounded-full bg-[#21408E] px-2 py-[2px] text-[10px] text-white sm:text-[8px] md:text-[13px] xl:rounded-[24px] xl:px-4 xl:text-[22px] hover:shadow-[0_5px_#999] active:shadow-[0_2px_#666] btn s-transform"
           >
             Rent Now
           </button>
@@ -67,7 +67,7 @@
       </section>
       <section
         id="book-form"
-        class="mx-4 mt-6 bg-[#C4C4C4] px-4 py-3 md:mx-8 md:mt-16 md:p-8 xl:mx-16 xl:mt-4 rounded-md sm:rounded-none"
+        class="mx-4 mt-6 bg-[#C4C4C4] px-4 py-3 md:mx-8 md:mt-16 md:p-8 xl:mx-16 xl:mt-4 rounded-md sm:rounded-none scroll-mt-10"
       >
         <h2 class="for-h capitalize md:text-[28px] xl:text-[39px]">
           Book your dream car now!
@@ -125,7 +125,7 @@
           <input
             type="submit"
             value="Book"
-            class="h-[16px] w-[20%] rounded-[26px] bg-[#21408E] px-2 text-[10px] text-white hover:bg-[#21408eec] md:h-[34px] md:w-[15%] md:text-[20px] xl:h-[60px] xl:w-[50%] xl:text-[22px]"
+            class="h-[16px] w-[20%] rounded-[26px] bg-[#21408E] px-2 text-[10px] text-white hover:bg-[#21408eec] md:h-[34px] md:w-[15%] md:text-[20px] xl:h-[60px] xl:w-[50%] xl:text-[22px] hover:shadow-[0_5px_#fff] active:shadow-[0_2px_#999] btn s-transform"
           />
         </form>
       </section>
@@ -133,7 +133,7 @@
     <main id="main">
       <section
         id="our-services"
-        class="for-col mb-4 items-center sm:flex-row md:mt-36"
+        class="for-col mb-4 items-center sm:flex-row md:mt-36 scroll-mt-16"
       >
         <h2
           class="for-h text-center capitalize text-[#21408E] sm:hidden md:text-[28px] xl:text-[39px]"
@@ -215,173 +215,6 @@
         >
           We Have Everything You Need
         </h2>
-        <!-- <article class="flex justify-center flex-wrap gap-40 xl:flex-nowrap xl:gap-10">
-          <div class="md:flex gap-20 xl:gap-10 hidden">
-            <figure
-              class="relative h-[224px] md:h-[320px] sm:h-[290px] w-[200px] md:w-[250px] rounded-t-[21px] bg-[#CBC9C2] shadow-lg shadow-[#808080]"
-            >
-              <div
-                class="h-[66px] sm:h-[100px] md:h-[130px] rounded-t-[21px] bg-[#FAF5F8] pt-[21px] text-center"
-              >
-                <h2 class="text-[#21408E] for-product capitalize md:text-[28px]">Dodge Charger</h2>
-              </div>
-              <span
-                ><img
-                  src="img/dodge_21chargerscatpksd7t_angularfront_smokeshow 1.png"
-                  alt=""
-              /></span>
-              <div
-                class="absolute top-[87.5%] md:top-[92.7%] sm:top-[86.6%] w-full rounded-t-[21px] bg-[#FFFFFF] px-[20px] pb-3 pt-[6px] shadow-lg shadow-[#808080]"
-              >
-                <h3 class="text-[14px]">2016</h3>
-                <figure class="flex justify-between pb-[6px] pt-[6px]">
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/speedometer-icon.png" alt="" />
-                    <div><p class="text-[12px]">15k</p></div>
-                  </div>
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/pause_circle_outline.png" alt="" />
-                    <div><p class="text-[12px]">Auto</p></div>
-                  </div>
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/Vector.png" alt="" />
-                    <div><p class="text-[12px]">Auto</p></div>
-                  </div>
-                </figure>
-                <div>
-                  <h3 class="pb-[8px] text-center text-[#21408E] text-[22px]">10.000$</h3>
-                </div>
-              </div>
-              <button
-                class="absolute right-[24.9%] md:right-[29%] bottom-[-99.6px] sm:bottom-[-88.4px] md:bottom-[-105.7px] rounded-[12px] bg-[#21408E] text-[white] px-8 capitalize"
-              >
-                rent
-              </button>
-            </figure>
-            <figure
-              class="relative h-[224px] md:h-[320px] sm:h-[290px] w-[200px] md:w-[250px] rounded-t-[21px] bg-[#CBC9C2] shadow-lg shadow-[#808080]"
-            >
-              <div
-                class="h-[66px] sm:h-[100px] md:h-[130px] rounded-t-[21px] bg-[#FAF5F8] pt-[21px] text-center"
-              >
-                <h2 class="text-[#21408E] for-product capitalize md:text-[28px]">Audi RS7</h2>
-              </div>
-              <img class="absolute left-[-36px] h-[60%]"
-                  src="img/audi_rs7sportback-1.png"
-                  alt=""
-              />
-              <div
-                class="absolute top-[87.5%] md:top-[92.7%] sm:top-[86.6%] w-full rounded-t-[21px] bg-[#FFFFFF] px-[20px] pb-3 pt-[6px] shadow-lg shadow-[#808080]"
-              >
-                <h3 class="text-[14px]">2016</h3>
-                <figure class="flex justify-between pb-[6px] pt-[6px]">
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/speedometer-icon.png" alt="" />
-                    <div><p class="text-[12px]">15k</p></div>
-                  </div>
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/pause_circle_outline.png" alt="" />
-                    <div><p class="text-[12px]">Auto</p></div>
-                  </div>
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/Vector.png" alt="" />
-                    <div><p class="text-[12px]">Auto</p></div>
-                  </div>
-                </figure>
-                <div>
-                  <h3 class="pb-[8px] text-center text-[#21408E] text-[22px]">60.000$</h3>
-                </div>
-              </div>
-              <button
-                class="absolute right-[24.9%] md:right-[29%] bottom-[-99.6px] sm:bottom-[-88.4px] md:bottom-[-105.7px] rounded-[12px] bg-[#21408E] text-[white] px-8 capitalize"
-              >
-                Buy
-              </button>
-            </figure>
-          </div>
-          <div class="flex gap-20 xl:gap-10">
-            <figure
-              class="relative h-[224px] md:h-[320px] sm:h-[290px] w-[200px] md:w-[250px] rounded-t-[21px] bg-[#CBC9C2] shadow-lg shadow-[#808080]"
-            >
-              <div
-                class="h-[66px] sm:h-[100px] md:h-[130px] rounded-t-[21px] bg-[#FAF5F8] pt-[21px] text-center"
-              >
-                <h2 class="text-[#21408E] for-product capitalize md:text-[28px]">Audi RS7</h2>
-              </div>
-              <img class="absolute md:left-[-36px] h-[70%] sm:h-[60%] left-[-20px] w-[130%]"
-                  src="img/2021_audi_rs-7-sportback_base_032_nar-1.png"
-                  alt=""
-              />
-              <div
-                class="absolute top-[87.5%] md:top-[92.7%] sm:top-[86.6%] w-full rounded-t-[21px] bg-[#FFFFFF] px-[20px] pb-3 pt-[6px] shadow-lg shadow-[#808080]"
-              >
-                <h3 class="text-[14px]">2016</h3>
-                <figure class="flex justify-between pb-[6px] pt-[6px]">
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/speedometer-icon.png" alt="" />
-                    <div><p class="text-[12px]">15k</p></div>
-                  </div>
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/pause_circle_outline.png" alt="" />
-                    <div><p class="text-[12px]">Auto</p></div>
-                  </div>
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/Vector.png" alt="" />
-                    <div><p class="text-[12px]">Auto</p></div>
-                  </div>
-                </figure>
-                <div>
-                  <h3 class="pb-[8px] text-center text-[#21408E] text-[22px]">15.000$</h3>
-                </div>
-              </div>
-              <button
-                class="absolute right-[24.9%] md:right-[29%] bottom-[-99.6px] sm:bottom-[-88.4px] md:bottom-[-105.7px] rounded-[12px] bg-[#21408E] text-[white] px-8 capitalize"
-              >
-                rent
-              </button>
-            </figure>
-            <figure
-              class="relative h-[224px] md:h-[320px] sm:h-[290px] w-[200px] md:w-[250px] rounded-t-[21px] bg-[#CBC9C2] shadow-lg shadow-[#808080] hidden md:block"
-            >
-              <div
-                class="h-[66px] sm:h-[100px] md:h-[130px] rounded-t-[21px] bg-[#FAF5F8] pt-[21px] text-center"
-              >
-                <h2 class="text-[#21408E] text-left pl-6 for-product capitalize md:text-[28px]">Range Rover <br> Velar</h2>
-              </div>
-              <img class="absolute left-[-36px] h-[60%]"
-                  src="img/Range-rover-velar.png"
-                  alt=""
-              />
-              <div
-                class="absolute top-[87.5%] md:top-[92.7%] sm:top-[86.6%] w-full rounded-t-[21px] bg-[#FFFFFF] px-[20px] pb-3 pt-[6px] shadow-lg shadow-[#808080]"
-              >
-                <h3 class="text-[14px]">2016</h3>
-                <figure class="flex justify-between pb-[6px] pt-[6px]">
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/speedometer-icon.png" alt="" />
-                    <div><p class="text-[12px]">15k</p></div>
-                  </div>
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/pause_circle_outline.png" alt="" />
-                    <div><p class="text-[12px]">Auto</p></div>
-                  </div>
-                  <div class="flex items-center gap-[1px]">
-                    <img src="img/Vector.png" alt="" />
-                    <div><p class="text-[12px]">Auto</p></div>
-                  </div>
-                </figure>
-                <div>
-                  <h3 class="pb-[8px] text-center text-[#21408E] text-[22px]">65.000$</h3>
-                </div>
-              </div>
-              <button
-                class="absolute right-[24.9%] md:right-[29%] bottom-[-99.6px] sm:bottom-[-88.4px] md:bottom-[-105.7px] rounded-[12px] bg-[#21408E] text-[white] px-8 capitalize"
-              >
-                buy
-              </button>
-            </figure>
-          </div>
-        </article> -->
         <article class="flex justify-center items-center flex-wrap xl:gap-[1.063rem] md:gap-[11.125rem] pb-40">
           <div class="justify-center items-center flex-wrap xl:gap-[1.063rem] md:gap-[6.063rem] md:flex hidden">
             <figure class="w-[270px] shadow-lg shadow-[#808080] bg-[#CBC9C2] rounded-t-[21px] relative h-[384px]">
@@ -405,7 +238,7 @@
                 </div>
                 <div><h3 class="for-p font-[400] text-[25px] text-[#21408E] text-center pb-[8px]">10.000$</h3></div>
               </div>
-              <button class="capitalize absolute py-[2px] px-[54px] bg-[#21408E] top-[460px] right-[63px] for-p font-[400] text-[22px] text-[white] rounded-[12px]">rent </button>
+              <button class="capitalize absolute py-[2px] px-[54px] bg-[#21408E] top-[460px] right-[63px] for-p font-[400] text-[22px] text-[white] rounded-[12px] hover:shadow-[0_5px_#999] active:shadow-[0_2px_#666] btn s-transform">rent </button>
             </figure>
             <figure class="w-[270px] shadow-lg shadow-[#808080] bg-[#CBC9C2] rounded-t-[21px] relative h-[384px]">
               <div class="pt-[21px] bg-[#FAF5F8] text-center rounded-t-[21px] h-[166px]"><h2 class="for-product font-[300] text-[25px] text-[#21408E] px-[40px]">Audi RS7 </h2></div>
@@ -428,7 +261,7 @@
                 </div>
                 <div><h3 class="for-p font-[400] text-[25px] text-[#21408E] text-center pb-[8px]">60.000$</h3></div>
               </div>
-              <button class="capitalize absolute py-[2px] px-[54px] bg-[#21408E] top-[460px] right-[63px] for-p font-[400] text-[22px] text-[white] rounded-[12px]">buy</button>
+              <button class="capitalize absolute py-[2px] px-[54px] bg-[#21408E] top-[460px] right-[63px] for-p font-[400] text-[22px] text-[white] rounded-[12px] hover:shadow-[0_5px_#999] active:shadow-[0_2px_#666] btn s-transform">buy</button>
             </figure>
           </div>
           <div class="flex justify-center items-center flex-wrap xl:gap-[1.063rem] md:gap-[6.063rem]">
@@ -453,7 +286,7 @@
                 </div>
                 <div><h3 class="for-p font-[400] text-[25px] text-[#21408E] text-center pb-[8px]">15.000$</h3></div>
               </div>
-              <button class="capitalize absolute py-[2px] px-[54px] bg-[#21408E] top-[460px] right-[63px] for-p font-[400] text-[22px] text-[white] rounded-[12px]">rent</button>
+              <button class="capitalize absolute py-[2px] px-[54px] bg-[#21408E] top-[460px] right-[63px] for-p font-[400] text-[22px] text-[white] rounded-[12px] hover:shadow-[0_5px_#999] active:shadow-[0_2px_#666] btn s-transform">rent</button>
             </figure>
             <figure class="md:block hidden w-[270px] shadow-lg shadow-[#808080] bg-[#CBC9C2] rounded-t-[21px] relative h-[384px]">
               <div class="pt-[21px] bg-[#FAF5F8] rounded-t-[21px] h-[166px]"><h2 class="for-product font-[300] text-[25px] text-[#21408E] px-[40px]">Range Rover Velar</h2></div>
@@ -476,7 +309,7 @@
                 </div>
                 <div><h3 class="for-p font-[400] text-[25px] text-[#21408E] text-center pb-[8px]">65.000$</h3></div>
               </div>
-              <button class="capitalize absolute py-[2px] px-[54px] bg-[#21408E] top-[460px] right-[63px] for-p font-[400] text-[22px] text-[white] rounded-[12px]">buy</button>
+              <button class="capitalize absolute py-[2px] px-[54px] bg-[#21408E] top-[460px] right-[63px] for-p font-[400] text-[22px] text-[white] rounded-[12px] hover:shadow-[0_5px_#999] active:shadow-[0_2px_#666] btn s-transform">buy</button>
             </figure>
           </div>
         </article>
@@ -497,35 +330,35 @@
           <div class="flex justify-center items-center sm:gap-[14px] gap-[2px] flex-wrap">
             <figure class="bg-[#C4C4C4] flex items-center py-1 px-1 justify-center w-fit rounded-[13px] gap-1 h-[35px] md:h-[41.1px] xl:h-[55.1px]">
               <img src="img/audiii-1.png" alt="" class="w-[35%] xl:w-[39.2%]">
-              <div><p class="for-p md:text-xl xl:text-3xl">Audi</p></div>
+              <div><a class="after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1.5px] after:rounded-[3px] after:bg-[black] after:scale-x-0 hover:after:scale-x-100 after:origin-center hover:after:origin-center t-transform relative" href=""><p class="for-p md:text-xl xl:text-3xl">Audi</p></a></div>
             </figure>
             <figure class="bg-[#C4C4C4] flex items-center py-1 px-1 justify-center w-fit rounded-[13px] gap-1 h-[35px] md:h-[41.1px] xl:h-[55.1px]">
               <img src="img/merco-1.png" alt="" class="w-[35%] xl:w-[39.2%]">
-              <div><p class="for-p md:text-xl xl:text-3xl">Mercedes</p></div>
+              <div><a class="after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1.5px] after:rounded-[3px] after:bg-[black] after:scale-x-0 hover:after:scale-x-100 after:origin-center hover:after:origin-center t-transform relative" href=""><p class="for-p md:text-xl xl:text-3xl">Mercedes</p></a></div>
             </figure>
           </div>
           <div class="flex justify-center items-center sm:gap-[14px] gap-[0.85rem] flex-wrap">
             <figure class="bg-[#C4C4C4] flex items-center py-1 px-1 justify-center w-fit rounded-[13px] gap-1 h-[35px] md:h-[41.1px] xl:h-[55.1px] md:w-[160px] xl:w-[214.7px]">
               <img src="img/range-1.png" alt="" class="w-[35%] xl:w-[24.9%]">
-              <div><p class="for-p md:text-xl xl:text-3xl">land Rover</p></div>
+              <div><a class="after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1.5px] after:rounded-[3px] after:bg-[black] after:scale-x-0 hover:after:scale-x-100 after:origin-center hover:after:origin-center t-transform relative" href=""><p class="for-p md:text-xl xl:text-3xl">land Rover</p></a></div>
             </figure>
             <figure class="bg-[#C4C4C4] flex items-center py-1 px-1 justify-center w-fit rounded-[13px] gap-1 h-[35px] md:h-[41.1px] xl:h-[55.1px]">
               <img src="img/ferrarii-1.png" alt="" class="w-[35%] xl:w-[39.2%]">
-              <div><p class="for-p md:text-xl xl:text-3xl">Ferrari</p></div>
+              <div><a class="after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1.5px] after:rounded-[3px] after:bg-[black] after:scale-x-0 hover:after:scale-x-100 after:origin-center hover:after:origin-center t-transform relative" href=""><p class="for-p md:text-xl xl:text-3xl">Ferrari</p></a></div>
             </figure>
-            <figure class="bg-[#C4C4C4] flex items-center py-1 px-1 justify-center w-fit rounded-[13px] gap-1 h-[35px] md:h-[41.1px] xl:h-[55.1px]">
+            <figure class="bg-[#C4C4C4] hidden sm:flex items-center py-1 px-1 justify-center w-fit rounded-[13px] gap-1 h-[35px] md:h-[41.1px] xl:h-[55.1px]">
               <img src="img/tesla-1.png" alt="" class="w-[35%] xl:w-[39.2%]">
-              <div><p class="for-p md:text-xl xl:text-3xl">Tesla</p></div>
+              <div><a class="after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1.5px] after:rounded-[3px] after:bg-[black] after:scale-x-0 hover:after:scale-x-100 after:origin-center hover:after:origin-center t-transform relative" href=""><p class="for-p md:text-xl xl:text-3xl">Tesla</p></a></div>
             </figure>
           </div>
         </article>
         <div class="flex gap-2 items-center justify-center"><a
           href="https://dove-white.github.io/Books-important/"
-          class="s-focus relative for-p capitalize"
+          class="s-focus relative for-p capitalize after:content-[''] after:absolute after:left-[23.1px] after:bottom-[2.3px] after:w-[50%] after:h-[2px] after:rounded-[3px] after:bg-[#F1BC00] after:scale-x-100 t-transform s-transform"
           >see  the store</a
         ></div>
       </section>
-      <section id="blog" class="mt-[70px]">
+      <section id="blog" class="mt-[70px] scroll-mt-16">
         <h2
           class="for-h px-4 text-center capitalize md:text-[28px] xl:text-[39px] mb-8"
         >
@@ -537,7 +370,7 @@
             <span class="flex justify-center mb-[14px]">
               <div class="relative">
                 <img class="xl:opacity-0" src="img/Vector-(1).png" alt="" />
-                <img class="absolute top-[32%] right-[32%]" src="img/Vector-(2).png" alt="">
+                <img class="absolute top-[32%] right-[32%] t-transform s-transform" src="img/Vector-(2).png" alt="">
               </div>
             </span>
             <div>
@@ -555,7 +388,7 @@
             <span class="flex justify-center mb-[14px]">
               <div class="relative">
                 <img class="" src="img/Vector-(1).png" alt="" />
-                <img class="absolute top-[32%] right-[32%] w-[40%]" src="img/settings.png" alt="">
+                <img class="absolute top-[32%] right-[32%] t-transform s-transform w-[40%]" src="img/settings.png" alt="">
               </div>
             </span>
             <div>
@@ -574,7 +407,7 @@
             <span class="flex justify-center mb-[14px]">
               <div class="relative">
                 <img class="" src="img/Vector-(1).png" alt="" />
-                <img class="absolute top-[32%] right-[32%] w-[40%]" src="img/supervised_user_circle.png" alt="">
+                <img class="absolute top-[32%] right-[32%] t-transform s-transform w-[40%]" src="img/supervised_user_circle.png" alt="">
               </div>
             </span>
             <div>
@@ -590,7 +423,7 @@
             </div>
           </figure>
         </article>
-        <article id="resgister-form" class="w-full px-4">
+        <article id="resgister-form" class="w-full px-4 scroll-mt-10">
           <figure class="relative">
             <img src="img/driver-2.png" class="w-full xl:h-[500px]" alt="">
             <h2
@@ -598,11 +431,11 @@
         >
         become a driver <br> Your time. Your goals. You're <br class="md:hidden"> the boss. 
         </h2>
-            <form action="#" class="absolute top-[150px] md:top-[350px] xl:top-[290px] w-[80%] ml-[11px] md:ml-[22px]">
+            <form action="#" class="absolute top-[60%] md:top-[350px] xl:top-[290px] w-[80%] ml-[11px] md:ml-[22px]">
               <label for="email" class="text-white text-[10px] font-[400] md:text-[16px] xl:text-[26px]">Subscribe and joins us</label>
               <div class="relative w-[86%]">
                 <input type="email" placeholder="EMAIL" required class="w-full bg-[#E5E5E5] h-[27px] md:h-[56px] xl:h-[93px] rounded-[10px] outline-none pl-2 text-[10px] font-[400] md:text-[16px] xl:text-[26px]">
-                <input class="absolute bg-[#21408E] text-white right-[3.7px] top-[3.3px] md:top-[6.3px] xl:top-[3.3px] h-[21px] md:h-[42px] xl:h-[87px] rounded-[10px] px-[14px] md:px-[25px] text-[10px] font-[400] md:text-[16px] xl:text-[26px]" type="submit" value="Next">
+                <input class="absolute bg-[#21408E] text-white right-[3.7px] top-[3.3px] md:top-[6.3px] xl:top-[3.3px] h-[21px] md:h-[42px] xl:h-[87px] rounded-[10px] px-[14px] md:px-[25px] text-[10px] font-[400] md:text-[16px] xl:text-[26px] hover:shadow-[-5px_0px_#999] active:shadow-[-3px_0px_#666] btn-sub" type="submit" value="Next">
               </div>
             </form>
           </figure>
@@ -620,7 +453,7 @@
           <form action="#" class="w-[80%] md:w-[34%] xl:w-[54%]">
             <div class="relative">
               <input type="email" placeholder="EMAIL" required class="w-full bg-[#E5E5E5] h-[27px] md:h-[56px] xl:h-[61px] rounded-[10px] outline-none pl-2 text-[10px] font-[400] md:text-[16px] xl:text-[26px]">
-              <input class="absolute bg-[#21408E] text-white right-[3.7px] top-[3.3px] md:top-[6.3px] xl:top-[2.5px] h-[21px] md:h-[42px] xl:h-[57px] rounded-[10px] px-[14px] md:px-[25px] text-[10px] font-[400] md:text-[16px] xl:text-[26px]" type="submit" value="Next">
+              <input class="absolute bg-[#21408E] text-white right-[3.7px] top-[3.3px] md:top-[6.3px] xl:top-[2.5px] h-[21px] md:h-[42px] xl:h-[57px] rounded-[10px] px-[14px] md:px-[25px] text-[10px] font-[400] md:text-[16px] xl:text-[26px] hover:shadow-[-5px_0px_#999] active:shadow-[-3px_0px_#666] btn-sub" type="submit" value="Next">
             </div>
           </form>
         </article>
@@ -629,41 +462,41 @@
         <article class="flex justify-between py-[70px] sm:px-[3rem] px-[1.7rem]">
           <figure>
             <h2 class="sm:text-[0.7rem] mb-3px md:mb-[20px] for-h text-[0.7rem] font-[500] md:text-[1.25rem] xl:text-[32px] text-white">Reservation</h2>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Car Hire
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Car Hire
             </a></p>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Modify Or Cancel
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Modify Or Cancel
             </a></p>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Get A Receipt
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Get A Receipt
             </a></p>
           </figure>
           <figure>
             <h2 class="sm:text-[0.7rem] mb-3px md:mb-[20px] for-h text-[0.7rem] font-[500] md:text-[1.25rem] xl:text-[32px] text-white">Customer Services  </h2>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Help / fAQS
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Help / fAQS
             </a></p>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Press
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Press
             </a></p>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Blog
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Blog
             </a></p>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Contact Us
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Contact Us
             </a></p>
           </figure>
           <figure>
             <h2 class="sm:text-[0.7rem] mb-3px md:mb-[20px] for-h text-[0.7rem] font-[500] md:text-[1.25rem] xl:text-[32px] text-white">Company</h2>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">About us
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">About us
             </a></p>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Career
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Career
             </a></p>
-            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px]" href="">Report & Governance
+            <p class="md:mb-[8px]"><a class="mb-[2px] text-[0.6rem] font-[400] md:text-[1rem] text-[white] xl:text-[20.3px] after:content-[''] after:absolute after:left-0 after:bottom-[2.3px] after:w-full after:h-[1px] after:rounded-[3px] after:bg-[white] after:scale-x-0 sm:hover:after:scale-x-100 after:origin-right hover:after:origin-left t-transform relative" href="">Report & Governance
             </a></p>
           </figure>
         </article>
         <hr class="bg-[white] sm:mx-[3rem] mx-[1.7rem] h-[2px] md:h-[3px]">
         <figure class="flex justify-between sm:px-[3rem] px-[1.7rem] pt-[10px] pb-[50px]">
-          <div><a href="#header" class="sm:text-[0.7rem] mb-3px md:mb-[20px] for-p text-[0.7rem] font-[600] md:text-[1.25rem] xl:text-[32px] text-white hover:opacity-[0.55]">LUXURYCARS</a></div>
+          <div class="t-transform s-transform"><a href="#header" class="sm:text-[0.7rem] mb-3px md:mb-[20px] for-p text-[0.7rem] font-[600] md:text-[1.25rem] xl:text-[32px] text-white">LUXURYCARS</a></div>
           <div class="flex gap-2 md:gap-[1.75rem]">
-            <span><img class="w-[70%] md:w-[100%] cursor-pointer hover:opacity-[0.55]" src="img/t-icon.png" alt=""></span>
-            <span><img class="w-[70%] md:w-[100%] cursor-pointer hover:opacity-[0.55]" src="img/f-icon.png" alt=""></span>
-            <span><img class="w-[70%] md:w-[100%] cursor-pointer hover:opacity-[0.55]" src="img/i-icon.png" alt=""></span>
+            <span class="t-transform s-transform"><img class="w-[70%] md:w-[100%] cursor-pointer" src="img/t-icon.png" alt=""></span>
+            <span class="t-transform s-transform"><img class="w-[70%] md:w-[100%] cursor-pointer" src="img/f-icon.png" alt=""></span>
+            <span class="t-transform s-transform"><img class="w-[70%] md:w-[100%] cursor-pointer" src="img/i-icon.png" alt=""></span>
           </div>
         </figure>
       </section>
